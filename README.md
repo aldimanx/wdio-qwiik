@@ -1,3 +1,7 @@
+please note, i make 2 different way to run api testing.
+with conf.web = gherkin
+with conf.api = js file format
+
 # Sauce demo Qwiik automation project
 
 This project automates native Android app testing using **WebdriverIO** and **Cucumber**
@@ -36,7 +40,7 @@ npm install
 ├── features/              # Cucumber feature files
 ├── step-definitions/      # Step definitions
 ├── pageobjects/           # page object models
-├── wdio.conf.js           # WebdriverIO config
+├── wdio.conf.web.js           # WebdriverIO config
 ```
 
 ---
