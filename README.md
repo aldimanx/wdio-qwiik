@@ -16,7 +16,7 @@ This project automates native Android app testing using **WebdriverIO** and **Cu
 ### 1. Clone the Repository
 
 ```bash
-git clone xxx
+git clone https://github.com/aldimanx/wdio-qwiik.git
 cd qwiik-automation
 ```
 
@@ -50,7 +50,7 @@ npx wdio run wdio.conf.js
 ### Optional: Run specific test
 
 ```bash
-npx wdio run wdio.conf.elma.js --spec ./features/file.feature
+npx wdio run wdio.conf.js --spec ./features/file.feature
 ```
 
 ### Optional: Run with specific tags
