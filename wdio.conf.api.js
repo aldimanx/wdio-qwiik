@@ -1,3 +1,5 @@
+require("dotenv").config({ path: "./config.env" });
+
 exports.config = {
   //
   // ====================
@@ -20,7 +22,9 @@ exports.config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: ["./features/**/*.feature"],
+  specs: [
+    "./api/*.js", // API tests with axios
+  ],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -108,13 +112,14 @@ exports.config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: "cucumber",
+  framework: "mocha",
 
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
   //
-  // Delay in seconds between the spec file retry attempts
+  // Delay in seconds between the n
+  // spec file retry attempts
   // specFileRetriesDelay: 0,
   //
   // Whether or not retried spec files should be retried immediately or deferred to the end of the queue
